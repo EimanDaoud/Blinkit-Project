@@ -174,9 +174,9 @@ ORDER BY Total_Sales_in_Thousands DESC;
   }
 ]
 ```
-![Total Sales by Fat Content](Total Sales by Fat Content.png)
+![Total Sales by Fat Content](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/Total%20Sales%20by%20Fat%20Content.png?raw=true)
 comparision, and 2 categories it is better to be visulize with a pie chart, i created with python
-Chart code? Check them out here: [project_sql folder](/Project_SQL/).
+Chart code? Check them out here: [project_sql folder](charts.ipynb).
 ![Total Sales by Fat Content](Total Sales by Fat Content.png)
 
 **Findings:**

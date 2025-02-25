@@ -297,4 +297,4 @@ GROUP BY Outlet_Type
 ORDER BY Total_Sales DESC
 ```
 
-![BlinkIT Power BI Dashboard](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/Total%20Sales%20by%20Fat%20Content.png?raw=true)
+![BlinkIT Power BI Dashboard](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/BlinkIT%20Power%20BI%20Dashboard.png?raw=true)

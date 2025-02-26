@@ -9,7 +9,7 @@ Whenever I work with categorical columns, my first step is to verify that each c
 SELECT DISTINCT item_fat_content 
 FROM grocery;
 
-/* The result:
+/*Output:
 "item_fat_content"
 "Low Fat"
 "low fat"
@@ -26,7 +26,7 @@ CASE
     ELSE item_fat_content
 END;
 
-/*
+/*Output:
 "item_fat_content"
 "Regular"
 "Low Fat"
@@ -35,7 +35,8 @@ END;
 ## **2. Data Analysis**
 ### **2.1. KPI's Requirments**
 
-### **2.1.1. Total Sales: The overall revenue generated from all items sold**
+### **2.1.1. Total Sales:**
+The overall revenue generated from all items sold
 ```sql
 SELECT SUM(total_sales) AS Total_Sales
 FROM grocery;
@@ -72,10 +73,12 @@ WHERE item_fat_content = 'Low Fat';
 */
 ```
 
-### **2.1.2. Average Sales: The average revenue per sale**
+### **2.1.2. Average Sales:**
+The average revenue per sale
 ```sql
 SELECT AVG(total_sales) AS Average_Sales
 FROM grocery;
+
 /*Output:
 "average_sales"
 140.9927819781771
@@ -93,10 +96,12 @@ FROM grocery;
 
 */
 ```
-### **2.1.3. Number of Items: The total count of different items sold**
+### **2.1.3. Number of Items:** 
+The total count of different items sold
 ```sql
 SELECT COUNT(*) AS Number_of_Items
 FROM grocery;
+
 /*Output:
 "number_of_items"
 "8523"
@@ -109,6 +114,7 @@ SELECT
     CAST(AVG(rating) AS DECIMAL(10,2)) 
     || ' Stars' AS Average_Rating
 FROM grocery;
+
 /*Output:
 "average_rating"
 "3.97 Stars"
@@ -152,7 +158,7 @@ SELECT
     COUNT(*) AS Number_of_Items,
     CAST(AVG(rating) AS DECIMAL(10,2)) AS Average_Rating
 FROM grocery
--- WHERE outlet_establishment_year = 2022 (if we want to focus on 1 year)
+-- WHERE outlet_establishment_year = 2022 --(if we want to focus on 1 year)
 GROUP BY item_fat_content
 ORDER BY Total_Sales_in_Thousands DESC;
 
@@ -174,6 +180,15 @@ ORDER BY Total_Sales_in_Thousands DESC;
   }
 ]
 ```
+Output:
+| item_fat_content |  total_sales_in_thousands | average_sales   |number_of_items|average_rating|
+|------------------|---------------------------|-----------------|---------------|--------------|
+|Low Fat           |776.32 K                   | 140.7           |5517           |3.97          |
+|Regular           |425.36 K                   | 141.5           |3006           |3.97          |
+
+
+
+
 ![Total Sales by Fat Content](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/Total%20Sales%20by%20Fat%20Content.png?raw=true)
 comparision, and 2 categories it is better to be visulize with a pie chart, i created with python
 Chart code? Check them out here: [project_sql folder](charts.ipynb).

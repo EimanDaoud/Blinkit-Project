@@ -174,7 +174,9 @@ Output:
 Charts codes? Check them out here: [Chart Python Code](charts.ipynb).
 
 **Findings:**
-The insights from this data suggest that **both fat content categories are nearly equal in popularity**, as indicated by the similar average sales (140.7 vs. 141.5) and identical average ratings (3.97). However, **the total sales for Low Fat (776.32K) are significantly higher than Regular (425.36K). This difference is mainly due to the wider variety of items available (5517 vs. 3006)** rather than differences in individual product performance. Essentially, **the higher variety in Low Fat products contributed to its higher overall sales**, rather than a preference for one fat content over the other.
+* The insights from this data suggest that **both fat content categories are nearly equal in popularity**, as indicated by the similar average sales (140.7 vs. 141.5) and identical average ratings (3.97). 
+* However, **the total sales for Low Fat (776.32K) are significantly higher than Regular (425.36K). This difference is mainly due to the wider variety of items available (5517 vs. 3006)** rather than differences in individual product performance. 
+* Essentially, **the higher variety in Low Fat products contributed to its higher overall sales**, rather than a preference for one fat content over the other.
 
 ### 2.2.2. **Total Sales by Item Type:**
 *	**Objective:** Identify the performance of different item types in terms of total sales.
@@ -194,6 +196,7 @@ ORDER BY Total_Sales DESC;
 
 ```
 ![Total Sales by Item Type](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/Comparison%20of%20Item%20Types%20Across%20Metrics.png?raw=true)
+Charts codes? Check them out here: [Chart Python Code](charts.ipynb).
 
 
 **Findings:**
@@ -225,7 +228,7 @@ ORDER BY outlet_location_type
 
 
 ```
-
+Output:
 | outlet_location_type |  low_fat | Regular   |
 |----------------------|----------|-----------|
 |Tier 1                |215047.91 | 121349.90 |
@@ -245,9 +248,9 @@ GROUP BY
     outlet_establishment_year
 ORDER BY outlet_establishment_year
 
-
 ```
-
+![Total Sales by Outlet Establishment](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/Comparison%20of%20Item%20Types%20Across%20Metrics.png?raw=true)
+Charts codes? Check them out here: [Chart Python Code](charts.ipynb).
 
 ### **2.3. Chart Requirements**
 5. Percentage of Sales by Outlet Size:

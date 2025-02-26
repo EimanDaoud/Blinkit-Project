@@ -173,7 +173,7 @@ Output:
 |Regular           |425.36 K                   | 141.5           |3006           |3.97          |
 
 
-![Total Sales by Fat Content](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/output.png?raw=true)
+![Total Sales by Fat Content](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/LF%20Vs%20Regular.png?raw=true)
 Charts codes? Check them out here: [Chart Python Code](charts.ipynb).
 
 **Findings:**

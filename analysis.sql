@@ -28,7 +28,7 @@ END;
 "Low Fat"
 */
 
--- Total Sales
+-- 2.1.1. Total Sales
 SELECT SUM(total_sales) AS Total_Sales
 FROM grocery;
 
@@ -44,7 +44,7 @@ SELECT
 FROM grocery
 WHERE item_fat_content = 'Low Fat';
 
--- Average Sales
+-- 2.1.2. Average Sales
 SELECT AVG(total_sales) AS Average_Sales
 FROM grocery;
 
@@ -53,11 +53,11 @@ SELECT
     || ' USD per sale' AS Average_Sales
 FROM grocery;
 
--- Number of Items
+-- 2.1.3. Number of Items
 SELECT COUNT(*) AS Number_of_Items
 FROM grocery;
 
--- Average Rating
+-- .1.4. Average Rating
 SELECT AVG(rating) AS Average_Rating
 FROM grocery;
 
@@ -67,7 +67,7 @@ SELECT
 FROM grocery;
 
 
--- Total Sales by Fat Content
+-- 2.2.1. Total Sales by Fat Content
 SELECT 
     item_fat_content,
     CAST(SUM(total_sales) AS DECIMAL(10,2)) AS Total_Sales
@@ -87,7 +87,7 @@ GROUP BY item_fat_content
 ORDER BY Total_Sales_in_Thousands DESC;
 
 
--- Total Sales by Item Type
+-- 2.2.2. Total Sales by Item Type
 SELECT 
     item_type,
     CAST(SUM(total_sales) AS DECIMAL(10,2)) AS Total_Sales,
@@ -100,7 +100,7 @@ GROUP BY item_type
 ORDER BY Total_Sales DESC;
 
 
--- Fat Content by Outlet for Total Sales
+-- 2.2.3. Fat Content by Outlet for Total Sales
 SELECT 
     item_fat_content,
     outlet_location_type, 
@@ -123,7 +123,7 @@ ORDER BY outlet_location_type
 ;
 
 
---4.Total Sales by Outlet Establishment
+--2.2.4. Total Sales by Outlet Establishment
 SELECT 
     outlet_establishment_year, 
     CAST(SUM(Total_Sales) AS DECIMAL(10,2)) AS total_sales
@@ -134,7 +134,7 @@ ORDER BY outlet_establishment_year
 ;
 
 
---5. Percentage of Sales by Outlet Size
+--2.3.1 Percentage of Sales by Outlet Size
 SELECT 
     Outlet_Size, 
     CAST(SUM(Total_Sales) AS DECIMAL(10,2)) AS Total_Sales,
@@ -144,7 +144,7 @@ GROUP BY Outlet_Size
 ORDER BY Total_Sales DESC;
 
 
---6. Sales by Outlet Location
+--2.3.2 Sales by Outlet Location
 SELECT 
     outlet_location_type, 
     CAST(SUM(Total_Sales) AS DECIMAL(10,2)) AS Total_Sales,
@@ -154,7 +154,7 @@ GROUP BY outlet_location_type
 ORDER BY Total_Sales DESC;
 
 
---H. All Metrics by Outlet Type:
+--2.3.3 All Metrics by Outlet Type
 SELECT Outlet_Type, 
     CAST(SUM(Total_Sales) AS DECIMAL(10,2)) AS Total_Sales,
 	CAST(AVG(Total_Sales) AS DECIMAL(10,0)) AS Avg_Sales,

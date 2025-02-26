@@ -2,6 +2,7 @@
 [Dataset from kaggle](https://www.kaggle.com/datasets/arunkumaroraon/blinkit-grocery-dataset/data)
 
 The "Blinkit Grocery Dataset" appears to be a fictional dataset designed for a grocery or retail scenario, possibly for analytical purposes.
+Full Analysis: [SQL codes](analysis.sql).
 ## **1. Data Cleaning**
 Whenever I work with categorical columns, my first step is to verify that each category is consistently written across all rows.
 
@@ -108,7 +109,8 @@ FROM grocery;
 */
 
 ```
-### **2.1.4. Average Rating: The average customer rating for items sold**
+### **2.1.4. Average Rating: 
+The average customer rating for items sold**
 ```sql
 SELECT 
     CAST(AVG(rating) AS DECIMAL(10,2)) 
@@ -317,12 +319,12 @@ Output:
 Total Sales
 ![BlinkIT Power BI Dashboard](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/BlinkIT%20Power%20BI%20Dashboard.png?raw=true)
 Average Sale
-![BlinkIT Power BI Dashboard](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/BlinkIT%20Power%20BI%20Dashboard.png?raw=true)
+![BlinkIT Power BI Dashboard](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/Dashboard%202_avg%20sale.png?raw=true)
 Number of Items
-![BlinkIT Power BI Dashboard](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/BlinkIT%20Power%20BI%20Dashboard.png?raw=true)
+![BlinkIT Power BI Dashboard](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/Dashboard%203_no%20of%20items.png?raw=true)
 Average Rating
-![BlinkIT Power BI Dashboard](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/BlinkIT%20Power%20BI%20Dashboard.png?raw=true)
+![BlinkIT Power BI Dashboard](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/Dashboard%204_avg%20rating.png?raw=true)
 Outlet location type: Tier 1
-![BlinkIT Power BI Dashboard](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/BlinkIT%20Power%20BI%20Dashboard.png?raw=true)
+![BlinkIT Power BI Dashboard](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/Dashboard%205_tier1.png?raw=true)
 Outlet Size: High
-![BlinkIT Power BI Dashboard](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/BlinkIT%20Power%20BI%20Dashboard.png?raw=true)
+![BlinkIT Power BI Dashboard](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/Dashboard%206_high.png?raw=true)

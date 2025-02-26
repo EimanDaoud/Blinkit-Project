@@ -162,23 +162,6 @@ FROM grocery
 GROUP BY item_fat_content
 ORDER BY Total_Sales_in_Thousands DESC;
 
-/*Output:
-[
-  {
-    "item_fat_content": "Low Fat",
-    "total_sales_in_thousands": "776.32 K",
-    "average_sales": "140.7",
-    "number_of_items": "5517",
-    "average_rating": "3.97"
-  },
-  {
-    "item_fat_content": "Regular",
-    "total_sales_in_thousands": "425.36 K",
-    "average_sales": "141.5",
-    "number_of_items": "3006",
-    "average_rating": "3.97"
-  }
-]
 ```
 Output:
 | item_fat_content |  total_sales_in_thousands | average_sales   |number_of_items|average_rating|
@@ -187,11 +170,10 @@ Output:
 |Regular           |425.36 K                   | 141.5           |3006           |3.97          |
 
 
-
-
-![Total Sales by Fat Content](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/Total%20Sales%20by%20Fat%20Content.png?raw=true)
 comparision, and 2 categories it is better to be visulize with a pie chart, i created with python
+
 Chart code? Check them out here: [project_sql folder](charts.ipynb).
+
 ![Total Sales by Fat Content]([Total Sales by Fat Content.png](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/Low%20Fat%20vs%20Regular.png?raw=true))
 
 **Findings:**

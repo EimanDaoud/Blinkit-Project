@@ -171,7 +171,7 @@ Output:
 
 
 comparision, and 2 categories it is better to be visulize with a pie chart, i created with python
-![Total Sales by Fat Content](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/Low%20Fat%20vs%20Regular.png?raw=true)
+![Total Sales by Fat Content](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/output.png?raw=true)
 Chart code? Check them out here: [project_sql folder](charts.ipynb).
 
 **Findings:**

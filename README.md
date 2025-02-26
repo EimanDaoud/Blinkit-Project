@@ -2,6 +2,7 @@
 [Dataset from kaggle](https://www.kaggle.com/datasets/arunkumaroraon/blinkit-grocery-dataset/data)
 
 The "Blinkit Grocery Dataset" appears to be a fictional dataset designed for a grocery or retail scenario, possibly for analytical purposes.
+
 Full Analysis: [SQL codes](analysis.sql).
 ## **1. Data Cleaning**
 Whenever I work with categorical columns, my first step is to verify that each category is consistently written across all rows.
@@ -109,7 +110,7 @@ FROM grocery;
 */
 
 ```
-### **2.1.4. Average Rating: 
+### **2.1.4. Average Rating:**
 The average customer rating for items sold**
 ```sql
 SELECT 
@@ -256,7 +257,7 @@ ORDER BY outlet_establishment_year
 Charts codes? Check them out here: [Chart Python Code](charts.ipynb).
 
 ### **2.3. Chart Requirements**
-### **2.3.1 Percentage of Sales by Outlet Size:
+### 2.3.1 Percentage of Sales by Outlet Size:
 **Objective:** Analyze the correlation between outlet size and total sales.
 ```sql
 SELECT 

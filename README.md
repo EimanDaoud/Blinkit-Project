@@ -249,7 +249,7 @@ GROUP BY
 ORDER BY outlet_establishment_year
 
 ```
-![Total Sales by Outlet Establishment](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/Comparison%20of%20Item%20Types%20Across%20Metrics.png?raw=true)
+![Total Sales by Outlet Establishment](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/Total%20Sales%20by%20Outlet%20Establishment%20Year.png?raw=true)
 Charts codes? Check them out here: [Chart Python Code](charts.ipynb).
 
 ### **2.3. Chart Requirements**

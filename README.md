@@ -170,9 +170,8 @@ Output:
 |Regular           |425.36 K                   | 141.5           |3006           |3.97          |
 
 
-comparision, and 2 categories it is better to be visulize with a pie chart, i created with python
 ![Total Sales by Fat Content](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/output.png?raw=true)
-Chart code? Check them out here: [project_sql folder](charts.ipynb).
+Chart code? Check them out here: [Chart Python Code](charts.ipynb).
 
 **Findings:**
 The insights from this data suggest that **both fat content categories are nearly equal in popularity**, as indicated by the similar average sales (140.7 vs. 141.5) and identical average ratings (3.97). However, **the total sales for Low Fat (776.32K) are significantly higher than Regular (425.36K). This difference is mainly due to the wider variety of items available (5517 vs. 3006)** rather than differences in individual product performance. Essentially, **the higher variety in Low Fat products contributed to its higher overall sales**, rather than a preference for one fat content over the other.

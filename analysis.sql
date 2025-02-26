@@ -156,11 +156,11 @@ ORDER BY Total_Sales DESC;
 
 --H. All Metrics by Outlet Type:
 SELECT Outlet_Type, 
-CAST(SUM(Total_Sales) AS DECIMAL(10,2)) AS Total_Sales,
-		CAST(AVG(Total_Sales) AS DECIMAL(10,0)) AS Avg_Sales,
-		COUNT(*) AS No_Of_Items,
-		CAST(AVG(Rating) AS DECIMAL(10,2)) AS Avg_Rating,
-		CAST(AVG(Item_Visibility) AS DECIMAL(10,2)) AS Item_Visibility
+    CAST(SUM(Total_Sales) AS DECIMAL(10,2)) AS Total_Sales,
+	CAST(AVG(Total_Sales) AS DECIMAL(10,0)) AS Avg_Sales,
+	COUNT(*) AS No_Of_Items,
+	CAST(AVG(Rating) AS DECIMAL(10,2)) AS Avg_Rating,
+	CAST(AVG(Item_Visibility) AS DECIMAL(10,2)) AS Item_Visibility
 FROM grocery
 GROUP BY Outlet_Type
 ORDER BY Total_Sales DESC

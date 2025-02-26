@@ -273,7 +273,7 @@ Output:
 |High         |248991.58     | 20.72           |
 
 
-### **2.3.2 Sales by Outlet Location:
+### **2.3.2 Sales by Outlet Location:**
 **Objective:** Assess the geographic distribution of sales across different locations.
 ```sql
 SELECT 
@@ -292,15 +292,15 @@ Output:
 |Tier 1                |336397.81     | 27.99           |
 
 
-### **2.3.3 All Metrics by Outlet Type:
+### **2.3.3 All Metrics by Outlet Type:**
 **Objective:** Provide a comprehensive view of all key metrics (Total Sales, Average Sales, Number of 	Items, Average Rating) broken down by different outlet types.
 ```sql
 SELECT Outlet_Type, 
-CAST(SUM(Total_Sales) AS DECIMAL(10,2)) AS Total_Sales,
-		CAST(AVG(Total_Sales) AS DECIMAL(10,0)) AS Avg_Sales,
-		COUNT(*) AS No_Of_Items,
-		CAST(AVG(Rating) AS DECIMAL(10,2)) AS Avg_Rating,
-		CAST(AVG(Item_Visibility) AS DECIMAL(10,2)) AS Item_Visibility
+    CAST(SUM(Total_Sales) AS DECIMAL(10,2)) AS Total_Sales,
+	CAST(AVG(Total_Sales) AS DECIMAL(10,0)) AS Avg_Sales,
+	COUNT(*) AS No_Of_Items,
+	CAST(AVG(Rating) AS DECIMAL(10,2)) AS Avg_Rating,
+	CAST(AVG(Item_Visibility) AS DECIMAL(10,2)) AS Item_Visibility
 FROM grocery
 GROUP BY Outlet_Type
 ORDER BY Total_Sales DESC
@@ -313,5 +313,16 @@ Output:
 |Supermarket Type2  |131477.77     | 142      |928        |3.97      |0.06           |
 |Supermarket Type3  |130714.67     | 140      |935        |3.95      |0.06           |
 
-
+## Power BI Dashboard
+Total Sales
+![BlinkIT Power BI Dashboard](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/BlinkIT%20Power%20BI%20Dashboard.png?raw=true)
+Average Sale
+![BlinkIT Power BI Dashboard](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/BlinkIT%20Power%20BI%20Dashboard.png?raw=true)
+Number of Items
+![BlinkIT Power BI Dashboard](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/BlinkIT%20Power%20BI%20Dashboard.png?raw=true)
+Average Rating
+![BlinkIT Power BI Dashboard](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/BlinkIT%20Power%20BI%20Dashboard.png?raw=true)
+Outlet location type: Tier 1
+![BlinkIT Power BI Dashboard](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/BlinkIT%20Power%20BI%20Dashboard.png?raw=true)
+Outlet Size: High
 ![BlinkIT Power BI Dashboard](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/BlinkIT%20Power%20BI%20Dashboard.png?raw=true)

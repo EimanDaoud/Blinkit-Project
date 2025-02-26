@@ -171,7 +171,7 @@ Output:
 
 
 ![Total Sales by Fat Content](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/output.png?raw=true)
-Chart code? Check them out here: [Chart Python Code](charts.ipynb).
+Charts codes? Check them out here: [Chart Python Code](charts.ipynb).
 
 **Findings:**
 The insights from this data suggest that **both fat content categories are nearly equal in popularity**, as indicated by the similar average sales (140.7 vs. 141.5) and identical average ratings (3.97). However, **the total sales for Low Fat (776.32K) are significantly higher than Regular (425.36K). This difference is mainly due to the wider variety of items available (5517 vs. 3006)** rather than differences in individual product performance. Essentially, **the higher variety in Low Fat products contributed to its higher overall sales**, rather than a preference for one fat content over the other.
@@ -181,7 +181,6 @@ The insights from this data suggest that **both fat content categories are nearl
 *	**Additional KPI Metrics:** Assess how other KPIs (Average Sales, Number of Items, Average Rating) vary with fat content.
 
 ```sql
--- Total Sales by Item Type
 SELECT 
     item_type,
     CAST(SUM(total_sales) AS DECIMAL(10,2)) AS Total_Sales,
@@ -194,7 +193,7 @@ GROUP BY item_type
 ORDER BY Total_Sales DESC;
 
 ```
-![Top Paying Roles]('Total Sales by Item Type.png')
+![Total Sales by Item Type](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/Comparison%20of%20Item%20Types%20Across%20Metrics.png?raw=true)
 
 
 **Findings:**

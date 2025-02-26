@@ -250,11 +250,12 @@ ORDER BY outlet_establishment_year
 
 ```
 ![Total Sales by Outlet Establishment](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/Total%20Sales%20by%20Outlet%20Establishment%20Year.png?raw=true)
+
 Charts codes? Check them out here: [Chart Python Code](charts.ipynb).
 
 ### **2.3. Chart Requirements**
-5. Percentage of Sales by Outlet Size:
-	Objective: Analyze the correlation between outlet size and total sales.
+### **2.3.1 Percentage of Sales by Outlet Size:
+**Objective:** Analyze the correlation between outlet size and total sales.
 ```sql
 SELECT 
     Outlet_Size, 
@@ -264,11 +265,16 @@ FROM grocery
 GROUP BY Outlet_Size
 ORDER BY Total_Sales DESC;
 ```
+Output:
+| outlet_size |  total_sales | sales_percentage|
+|-------------|--------------|-----------------|
+|Medium       |507895.73     | 42.27           |
+|Small        |444794.17     | 37.01           |
+|High         |248991.58     | 20.72           |
 
 
-
-6. Sales by Outlet Location:
-	Objective: Assess the geographic distribution of sales across different locations.
+### **2.3.2 Sales by Outlet Location:
+**Objective:** Assess the geographic distribution of sales across different locations.
 ```sql
 SELECT 
     outlet_location_type, 
@@ -278,9 +284,16 @@ FROM grocery
 GROUP BY outlet_location_type
 ORDER BY Total_Sales DESC;
 ```
+Output:
+| outlet_location_type |  total_sales | sales_percentage|
+|----------------------|--------------|-----------------|
+|Tier 3                |472133.03     | 39.29           |
+|Tier 2                |393150.64     | 32.72           |
+|Tier 1                |336397.81     | 27.99           |
 
-7. All Metrics by Outlet Type:
-	Objective: Provide a comprehensive view of all key metrics (Total Sales, Average Sales, Number of 	Items, Average Rating) broken down by different outlet types.
+
+### **2.3.3 All Metrics by Outlet Type:
+**Objective:** Provide a comprehensive view of all key metrics (Total Sales, Average Sales, Number of 	Items, Average Rating) broken down by different outlet types.
 ```sql
 SELECT Outlet_Type, 
 CAST(SUM(Total_Sales) AS DECIMAL(10,2)) AS Total_Sales,
@@ -292,5 +305,13 @@ FROM grocery
 GROUP BY Outlet_Type
 ORDER BY Total_Sales DESC
 ```
+Output:
+| outlet_type       |  total_sales | avg_sales|no_of_items|avg_rating|item_visibility|
+|-------------------|--------------|----------|-----------|----------|---------------|
+|Supermarket Type1  |787549.89     | 141      |5577       |3.96      |0.06           |
+|Grocery Store      |151939.15     | 140      |1083       |3.99      |0.10           |
+|Supermarket Type2  |131477.77     | 142      |928        |3.97      |0.06           |
+|Supermarket Type3  |130714.67     | 140      |935        |3.95      |0.06           |
+
 
 ![BlinkIT Power BI Dashboard](https://github.com/EimanDaoud/Blinkit-Project/blob/main/Images/BlinkIT%20Power%20BI%20Dashboard.png?raw=true)
